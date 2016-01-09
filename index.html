@@ -60,11 +60,28 @@ header{
 }
 footer{
 	height: 0.55rem;
+	line-height: 0.55rem;
 	width: 100%;
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background: #000;
+	background: -webkit-linear-gradient(top,#121f21,#1e1e1e);
+}
+footer a{
+	width: 50%;
+	text-align: center;
+	float: left;
+	box-sizing:border-box;
+}
+footer a:nth-of-type(1){
+	border-right: 1px #222 solid;
+}
+footer a:nth-of-type(2){
+	border-left: 1px #222 solid;
+}
+footer a.active{
+	background: -webkit-linear-gradient(top,#101010,#070707);
+	border-color: #010101;
 }
 .picList li{
 	width: 1rem;
@@ -102,7 +119,7 @@ footer{
 			<li></li>
 		</ul>
 	</section>
-	<footer><a href="javascript:;">相机相册</a><a href="javascript:;">所有相册</a></footer>
+	<footer><a class="active" href="javascript:;">相机相册</a><a href="javascript:;">所有相册</a></footer>
 	<span class="recyle"></span>
 </article>
 
