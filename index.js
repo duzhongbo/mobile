@@ -6,6 +6,7 @@ for(var i=1;i<=16;i++){
 //
 function create(aData){
 	var sHtml = '';
+	var aRemove=[];
 	for(var i=0,len=aData.length;i<len;i++){
 		sHtml+='<li style="background-image:url('+aData[i]+')"></li>'
 	}
