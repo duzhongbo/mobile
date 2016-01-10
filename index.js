@@ -25,6 +25,7 @@ function create(aData){
 	}
 	function selected(){
 		this.style.opacity='0.5';
+		aRemove.push(this.index);
 		oBtn[0].style.display='block';
 	}
 	function fnRemove(){
