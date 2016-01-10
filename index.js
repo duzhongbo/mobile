@@ -32,7 +32,7 @@ function create(aData){
 		for(var i=0,len=aRemove.length;i<len;i++){
 			picList.removeChild(aRemove[i]);
 		}
-	}
+	} 
 
 }
 create(aData);
