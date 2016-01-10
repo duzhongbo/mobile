@@ -29,7 +29,9 @@ function create(aData){
 		oBtn[0].style.display='block';
 	}
 	function fnRemove(){
-		
+		for(var i=0,len=aRemove.length;i<len;i++){
+			picList.removeChild(aRemove[i]);
+		}
 	}
 
 }
