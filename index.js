@@ -15,13 +15,14 @@ function create(aData){
 	oBtn[1].addEventListener('touchend',fnEnd,false);
 	function fnEnd(){
 		this.innerHTML = '取消';
-		oBtn[0].style.display='block';
+		
 		for(var i=0,len=aLi.length;i<len;i++){
 			aLi[i].addEventListener('touchend',selected,false);
 		}
 	}
 	function selected(){
 		this.style.opacity='0.5';
+		oBtn[0].style.display='block';
 	}
 
 }
