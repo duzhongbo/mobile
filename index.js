@@ -13,6 +13,7 @@ function create(aData){
 	var aLi = picList.getElementsByTagName('li');
 	var oBtn = page.getElementsByClassName('btn');
 	oBtn[1].addEventListener('touchend',fnEnd,false);
+	oBtn[0].addEventListener('touchend',fnRemove,false);
 	function fnEnd(){
 		this.innerHTML = '取消';
 		
@@ -23,6 +24,9 @@ function create(aData){
 	function selected(){
 		this.style.opacity='0.5';
 		oBtn[0].style.display='block';
+	}
+	function fnRemove(){
+		
 	}
 
 }
