@@ -19,6 +19,7 @@ function create(aData){
 		this.innerHTML = '取消';
 		
 		for(var i=0,len=aLi.length;i<len;i++){
+			aLi[i].index=i;
 			aLi[i].addEventListener('touchend',selected,false);
 		}
 	}
