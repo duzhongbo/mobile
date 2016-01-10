@@ -10,5 +10,19 @@ function create(aData){
 		sHtml+='<li style="background-image:url('+aData[i]+')"></li>'
 	}
 	picList.innerHTML=sHtml;
+	var aLi = picList.getElementsByTagName('li');
+	var oBtn = page.getElementsByClassName('btn');
+	oBtn[1].addEventListener('touchend',fnEnd,false);
+	function fnEnd(){
+		this.innerHTML = '取消';
+		oBtn[0].style.display='block';
+		for(var i=0,len=aLi.length;i<len;i++){
+			aLi[i].addEventListener('touchend',selected,false);
+		}
+	}
+	function selected(){
+		this.style.opacity='0.5';
+	}
+
 }
 create(aData);
